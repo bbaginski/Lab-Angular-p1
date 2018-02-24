@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Lab</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="app" ng-controller="ToDoController as todo">
+    <div class="todoContent">
+        <h1>TODO List</h1>
+        <h4>A place to store the things you have to do!</h4>
+        <input ng-model="todo.tdfilter" type="text" placeholder="Fliter your to-dos" />
+        <ol id="TDlist">
+            <li ng-repeat="TD in todo.list | filter: todo.tdfilter"> {{TD}} <span ng-click="todo.remove(TD)">X</span></li>
+        </ol>
+        <input ng-model="todo.newToDo" ng-keyup="$event.keyCode == 13 && todo.addToDo()" type="text" placeholder="Add your to-do" />
+        <button class="btn" ng-click="todo.addToDo()">Add</button>
+        
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="ToDo-Controller.js"></script>
+</body>
+</html>

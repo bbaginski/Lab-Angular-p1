@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+*{box-sizing: border-box;}
+
+body{
+    background:darkblue; 
+  background: linear-gradient(to bottom right, navy, blue);
+  font-family: 'Indie Flower', cursive;
+}
+.todoContent{
+    width:400px;
+    margin:25px auto 0; 
+    text-align: center;
+    background:#fff;
+    border:solid 1px #7a7a7a;
+    min-height: 100vh;
+}
+#TDlist{
+    font-weight: bold;
+    text-align:left;
+    width:80%;
+    font-size:24px;
+    margin:0 auto;
+}
+#TDlist span{
+    float:right;
+    cursor: pointer;
+    color:maroon;
+    display:block;
+}
+
+#TDlist span:hover{
+    color:red;
+}
+.todoContent input{
+    width:90%;
+    padding:5px 15px;
+    font-size:18px;
+    margin:20px 0;
+}
+.todoContent .btn{
+    width:90%;
+} 
+.btn {
+    background: red;
+    background-image: -webkit-linear-gradient(top, red, maroon);
+    background-image: -moz-linear-gradient(top, red, maroon);
+    background-image: -ms-linear-gradient(top, red, maroon);
+    background-image: -o-linear-gradient(top, red, maroon);
+    background-image: linear-gradient(to bottom, red, maroon);
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: maroon;
+    background-image: -webkit-linear-gradient(top, maroon, red);
+    background-image: -moz-linear-gradient(top, maroon, red);
+    background-image: -ms-linear-gradient(top, maroon, red);
+    background-image: -o-linear-gradient(top, maroon, red);
+    background-image: linear-gradient(to bottom, maroon, red);
+    text-decoration: none;
+  }
