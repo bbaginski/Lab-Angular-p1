@@ -5,12 +5,14 @@
         var td = this;
         td.list = [];
         td.addToDo = function(){
+            if (!td.newToDo){
+                return;
+            }
             td.list.push(td.newToDo);
             td.newToDo = '';
         }
-        td.remove = function(item){
-            var itemIndex = td.list.indexOf(item);
-            td.list.splice(itemIndex, 1);
+        td.remove = function(index){
+            td.list.splice(index, 1);
         }
 
 
